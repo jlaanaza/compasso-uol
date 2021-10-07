@@ -17,7 +17,7 @@ public class Product {
 	
 	@Id
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="product_sequence")
-    @SequenceGenerator(name="product_sequence", sequenceName="SEQ_PROD")
+    @SequenceGenerator(name="product_sequence", sequenceName="SEQ_PRODUCT",allocationSize = 1)
     private Long id;
 
     @NotNull(message="Nome não pode ser nulo.")

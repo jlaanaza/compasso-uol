@@ -23,5 +23,25 @@ public class ProductService {
         return productRepository.findAll();
     }
     
+    public Product findById(Long id) {
+        return productRepository.findById(id).get();
+    }
+    
+    public List<Product> search(String q,Double min_price,Double max_price) {
+        return productRepository.search(q,min_price,max_price);
+    }
+    
+    public Product create(Product product) {
+        return productRepository.save(product);
+    }
+    
+    public Product update(Product product) {
+        return productRepository.save(product);
+    }
+    
+    public void delete(Long id) {
+        productRepository.deleteById(id);
+    }
+    
 
 }
