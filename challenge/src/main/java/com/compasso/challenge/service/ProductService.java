@@ -27,8 +27,8 @@ public class ProductService {
         return productRepository.findById(id).get();
     }
     
-    public List<Product> search(String q,Double min_price,Double max_price) {
-        return productRepository.search(q,min_price,max_price);
+    public List<Product> search(String q, Double min_price, Double max_price) {
+        return productRepository.search(q , min_price , max_price);
     }
     
     public Product create(Product product) {
