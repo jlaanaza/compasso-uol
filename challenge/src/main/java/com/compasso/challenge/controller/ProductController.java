@@ -74,7 +74,7 @@ public class ProductController {
 
         Product response = productService.create(product);
 
-        return new ResponseEntity<ProductDTO>(convertToDTO(response), new HttpHeaders(), HttpStatus.OK);
+        return new ResponseEntity<ProductDTO>(convertToDTO(response), new HttpHeaders(), HttpStatus.CREATED);
     }
 	
 	@PutMapping
