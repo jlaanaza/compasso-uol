@@ -10,7 +10,7 @@ Para execução com o docker-compose você deverá seguir os seguintes passos:
 ```
 docker-compose up -d
 ```
-
+Após isso a aplicação já estará rodando e pronta para ser utilizada.
 
 ## Outras formas de executar o projeto
 
