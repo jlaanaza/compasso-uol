@@ -4,7 +4,7 @@
 
 Para execução com o docker-compose você deverá seguir os seguintes passos:
 
-* 1 - O SO terá que ter, já instalado, Java 11 ,o Maven 3.6.3 e o Docker na versão 20.10.8. 
+* 1 - O SO terá que ter, já instalado, Java 11 , o Maven 3.6.3 e o Docker na versão 20.10.8. 
 * 2 - Executar o script de build (build.sh) presente nesta pasta. Este script irá gerar o jar necessário para funcionamento da aplicação.
 * 3 - Executar o comando abaixo:
 ```
