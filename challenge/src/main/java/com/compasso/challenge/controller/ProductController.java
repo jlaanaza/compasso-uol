@@ -79,8 +79,8 @@ public class ProductController {
 		return new ResponseEntity<ProductDTO>(convert.convertToDTO(response), new HttpHeaders(), HttpStatus.CREATED);
 	}
 
-	@PutMapping
-	public ResponseEntity<ProductDTO> update(@RequestBody Product product, @PathParam(value = "id") Long id) {
+	@PutMapping(value = "/{id}")
+	public ResponseEntity<ProductDTO> update(@RequestBody Product product, @PathVariable(value = "id") Long id) {
 		Product productDb = null;
 		try {
 			productDb = productService.findById(id);
